@@ -1,0 +1,153 @@
+@import './normalize.css';
+@import './default.css';
+
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --second-family: 'Hind Madurai', sans-serif;
+    --third-family: 'Fredoka One', sans-serif;
+    --black: #0f0101;
+    --gray: #c4c4c4;
+    --second-black: #150101;
+    --white: #ffffff;
+    --pink: #f2ceda;
+    --pink-second: #d23166;
+    scroll-behavior: smooth;
+}
+
+.container {
+    --width: 1085px;
+    --padding: 20px;
+    max-width: calc(var(--width) + var(--padding) * 2);
+    padding: 0 var(--padding);
+    margin: 0 auto;
+}
+.text-pink {
+    color: var(--pink-second);
+}
+.btn {
+    font-family: var(--second-family);
+    font-weight: 700;
+    color: var(--white);
+    border-radius: 5px;
+    padding: 14px 50px;
+    background: var(--pink-second);
+    width: fit-content;
+}
+
+.title-main {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 44px;
+    color: #000;
+}
+.title-second {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 44px;
+    color: #000;
+}
+/* ------------------------------------------------- */
+.header {
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    max-width: 79px;
+    max-height: 79px;
+}
+.header__menu {
+    display: flex;
+    gap: 172px;
+    /* TODO: сделать более гибкий дизайн отступов */
+}
+
+.menu__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.menu__nav_link {
+    color: var(--second-black);
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.link-active {
+    color: var(--pink-second);
+    opacity: 1;
+    font-weight: 700;
+    font-size: 15px;
+}
+/* ---------------------hero---------------------------- */
+.hero__container {
+    padding-top: 179px;
+    padding-bottom: 213px;
+}
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 665px;
+}
+.hero__content_p {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+}
+.hero__content_title {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 121%;
+    /* TODO: не подключен 3й шрифт */
+    margin-bottom: 35px;
+}
+.text-pink {
+    opacity: 0.9;
+}
+.hero__content_text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 50px;
+    opacity: 0.6;
+}
+/* ---------------------info---------------------------- */
+.info {
+    background-color: var(--white);
+    padding: 100px 0;
+}
+
+.info__cards {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+}
+.info__card {
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: 7px;
+    padding: 35px 26px 28px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info__card_img {
+    margin-bottom: 23px;
+}
+.info__card_title {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+.info__card_ {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.6;
+}
