@@ -6,24 +6,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400&family=Hind+Madurai:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Hind+Madurai:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet"
         />
+
         <link rel="stylesheet" href="./css/style.css" />
         <script src="./js/index.js" defer></script>
         <title>Polar - ice cream</title>
     </head>
     <body>
-        <header class="header">
+        <header id="header" class="header">
             <div class="container header__container">
                 <img class="header__logo" src="./image/logo.svg" alt="Логотип Polar - ice cream" id="logo" />
                 <div class="header__menu menu">
                     <ul class="menu__nav">
                         <li class="menu__nav_item"><a href="#hero" class="menu__nav_link link-active">Home</a></li>
-                        <li class="menu__nav_item"><a href="#Product" class="menu__nav_link">Product</a></li>
+                        <li class="menu__nav_item"><a href="#product" class="menu__nav_link">Product</a></li>
                         <li class="menu__nav_item"><a href="#Pricing" class="menu__nav_link">Pricing</a></li>
                         <li class="menu__nav_item"><a href="#Testimonials" class="menu__nav_link">Testimonials</a></li>
-                        <li class="menu__nav_item"><a href="#Contact" class="menu__nav_link">Contact Us</a></li>
+                        <li class="menu__nav_item"><a href="#contact" class="menu__nav_link">Contact Us</a></li>
                     </ul>
                     <button class="btn menu__btn">Buy Now</button>
                 </div>
@@ -71,11 +72,145 @@
                     </ul>
                 </div>
             </section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
+            <section class="banner">
+                <div class="container banner__container">
+                    <div class="banner__content">
+                        <h2 class="banner__content_title">Brown Sugar Oatmea</h2>
+                        <p class="banner__content_text">
+                            Together with McDonald’s, Burger King has grown to become synonymous with burgers in the
+                            US.Together with McDonald’s, Burger King has grown to become synonymous.
+                        </p>
+                        <button class="btn">See Details</button>
+                    </div>
+                </div>
+            </section>
+            <section id="product" class="product">
+                <div class="container product__container">
+                    <div class="product__content">
+                        <h3 class="product__title">Our Product</h3>
+                        <ul class="product__filter">
+                            <li class="product__filter_item select">ICE CREAM</li>
+                            <li class="product__filter_item">CAYENNE CHOCOLATE</li>
+                            <li class="product__filter_item">CAKE BATTER</li>
+                            <li class="product__filter_item">CANDY CANE</li>
+                            <li class="product__filter_item">PLATTERS</li>
+                            <li class="product__filter_item">DESSERT</li>
+                        </ul>
+                        <div class="catalog">
+                            <div class="catalog__card">
+                                <img src="./image/pistachio.jpg" alt="pistachio" />
+                                <div class="catalog__card_info card">
+                                    <h4 class="card__title">Brown bread</h4>
+                                    <p class="card__text">
+                                        Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer
+                                        in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food
+                                        scene.
+                                    </p>
+                                    <p class="card__price">
+                                        <span class="card__price_final">$19.55</span
+                                        ><span class="card__price_main">$22.55</span>
+                                    </p>
+                                    <button class="btn">Buy Now</button>
+                                </div>
+                            </div>
+                            <div class="catalog__card">
+                                <img src="./image/yellowIceCream.jpg" alt="yellowIceCream" />
+                                <div class="catalog__card_info card">
+                                    <h4 class="card__title">Cayenne chocolate</h4>
+                                    <p class="card__text">
+                                        Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer
+                                        in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food
+                                        scene.
+                                    </p>
+                                    <p class="card__price">
+                                        <span class="card__price_final">$19.55</span
+                                        ><span class="card__price_main">$22.55</span>
+                                    </p>
+                                    <button class="btn">Buy Now</button>
+                                </div>
+                            </div>
+                            <div class="catalog__card">
+                                <img src="./image/chocolate.jpg" alt="chocolate" />
+                                <div class="catalog__card_info card">
+                                    <h4 class="card__title">Sweet corn</h4>
+                                    <p class="card__text">
+                                        Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer
+                                        in the healthy fast food scene.Bon Au Pain is a pioneer in the healthy fast food
+                                        scene.
+                                    </p>
+                                    <p class="card__price">
+                                        <span class="card__price_final">$19.55</span
+                                        ><span class="card__price_main">$22.55</span>
+                                    </p>
+                                    <button class="btn">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__reviws"></div>
+                </div>
+            </section>
+            <section class="manual">
+                <div class="container container__manual"></div>
+            </section>
+            <section id="#contact" class="question">
+                <div class="container question__container">
+                    <h3 class="question__title">
+                        Have Question in Mind?<br />
+                        Let us help you
+                    </h3>
+                    <form class="form question__form">
+                        <input class="question__input" type="text" placeholder="Enter your question" />
+                        <button class="btn question__btn">Send</button>
+                    </form>
+                </div>
+            </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__info">
+                    <a class="footer__logo" href="#header"><img src="./image/logo.svg" alt="logo" /></a>
+                    <p class="footer__info_text">
+                        Some food has looked so awful that it's looked like something that the dog's brought home.
+                    </p>
+                    <h5 class="footer__flow_title">Fllow Us</h5>
+                    <div class="footer__flow">
+                        <a class="footer__flow_link" href="#"><img src="./image/facebook 1.svg" alt="facebook" /></a>
+                        <a class="footer__flow_link" href="#"><img src="./image/twitter 1.svg" alt="twitter" /></a>
+                        <a class="footer__flow_link" href="#"><img src="./image/instagram 1.svg" alt="twitter" /></a>
+                        <a class="footer__flow_link" href="#"><img src="./image/linkedin 1.svg" alt="twitter" /></a>
+                    </div>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li class="footer__menu_item active">Home</li>
+                        <li class="footer__menu_item">Product</li>
+                        <li class="footer__menu_item">Blog</li>
+                        <li class="footer__menu_item">Pricing</li>
+                        <li class="footer__menu_item">Testimonials</li>
+                        <li class="footer__menu_item">Contact Us</li>
+                    </ul>
+                    <ul class="footer__menu footer__menu-second">
+                        <li class="footer__menu_item">Delivery Information</li>
+                        <li class="footer__menu_item">Privacy Policy</li>
+                        <li class="footer__menu_item">Terms & Condition</li>
+                        <li class="footer__menu_item">Search Terms</li>
+                        <li class="footer__menu_item">Order & Return</li>
+                    </ul>
+                </nav>
+                <div class="footer__form">
+                    <h6 class="footer__form_title">Newsletter</h6>
+                    <form class="form">
+                        <input class="form__input" type="text" placeholder="Your Email" />
+                        <button class="btn form__btn" type="submit">Subscribe</button>
+                    </form>
+                    <div class="payment">
+                        <img class="payment__img" src="./image/paypal.svg" alt="paypal" />
+                        <img class="payment__img" src="./image/masterCard.svg" alt="masterCard" />
+                        <img class="payment__img" src="./image/visa.svg" alt="visa" />
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
