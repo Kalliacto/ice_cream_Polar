@@ -206,6 +206,7 @@
 .product__container {
 }
 .product__content {
+    margin-bottom: 150px;
 }
 .product__title {
     font-family: var(--second-family);
@@ -295,11 +296,130 @@
 }
 
 .product__reviws {
+    display: flex;
+    justify-content: space-between;
+    gap: 85px;
 }
-/* ----------------------question-------------------------- */
+
+.reviws {
+}
+.reviws__slider {
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+}
+.slider__content {
+    overflow: hidden;
+}
+.slide {
+}
+.user {
+}
+.user__avatar {
+}
+.user__info {
+}
+.user__name {
+}
+.user__country {
+}
+.reviw {
+}
+.slider__controller {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.left {
+    transform: rotate(180deg);
+}
+.slider__controller_dots {
+    display: flex;
+    gap: 20px;
+}
+.right {
+}
+.reviws__img {
+}
+/* ----------------------manual-------------------------- */
 .manual {
-    padding: 90px 0 151px;
+    /* padding: 90px 0 151px; */
 }
+
+.container__manual {
+    display: flex;
+    justify-content: center;
+    gap: 134px;
+    padding: 0;
+}
+.manual__image {
+    max-width: 305px;
+}
+.manual__image img {
+    position: relative;
+    top: 10%;
+}
+.manual__content {
+    max-width: 621px;
+    margin-top: 98px;
+}
+.manual__title {
+    font-weight: 500;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.manual__text {
+    max-width: 607px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: #0f0101;
+    opacity: 0.7;
+    margin-bottom: 29px;
+}
+.manual__btns {
+    margin-bottom: 39px;
+    opacity: 1;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.btn__wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.manual__btn {
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+}
+.manual__btn-hand {
+    background: var(--white) url(../image/hand.svg) no-repeat center;
+}
+.manual__btn-cart {
+    background: var(--white) url(../image/cart.svg) no-repeat center;
+}
+.manual__btn-notepad {
+    background: var(--white) url(../image/notepad.svg) no-repeat center;
+}
+.manual__btn_img {
+    width: 100%;
+    height: 100%;
+}
+.manual__btn_text {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.manual__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 /* ----------------------question-------------------------- */
 
 .question {
