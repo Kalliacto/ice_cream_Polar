@@ -306,42 +306,125 @@
 .reviws__slider {
 }
 .slider {
+    max-width: 350px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
-.slider__content {
-    overflow: hidden;
+.slides {
+    width: calc(var(--slide-count) * 100%);
+    display: flex;
+    transition: all 0.5s;
 }
 .slide {
+    width: calc(100% / var(--slide-count));
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 .user__avatar {
+    max-width: 30px;
+    max-height: 30px;
 }
-.user__info {
+
+.review {
+    width: 100%;
+    align-self: center;
+    position: relative;
+    padding: 5px 15px;
 }
-.user__name {
+.review::before {
+    content: url(../image/decor.png);
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.user__country {
+.review::after {
+    content: url(../image/decor2.png);
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
-.reviw {
+.review__text {
+    max-width: 322px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    opacity: 0.7;
 }
 .slider__controller {
     display: flex;
     align-items: center;
-    gap: 25px;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
 }
-.left {
+.slider__controller_btn {
+    border: none;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    padding: 2px;
+    background: url(../image/arrow.svg);
+}
+.slider__controller_btn.left {
     transform: rotate(180deg);
 }
-.slider__controller_dots {
+.right:disabled,
+.left:disabled {
+    opacity: 0.5;
+}
+
+.slider__controller__markers {
+    width: 100%;
+    overflow: hidden;
+}
+.markers__box {
+    width: calc(100% / 3);
+    margin: 0 auto;
+}
+.markers__wrap {
+    width: calc(100% * var(--slide-count));
     display: flex;
-    gap: 20px;
+    transition: all 0.5s;
 }
-.right {
+
+.marker {
+    width: calc(100% / var(--slide-count));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
-.reviws__img {
+.marker .marker__img {
+    width: 50%;
+    height: auto;
+    transition: all 0.5s;
 }
+
+.marker__active .marker__img {
+    width: 75%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #d64374;
+    border-radius: 50%;
+}
+
 /* ----------------------manual-------------------------- */
 .manual {
     /* padding: 90px 0 151px; */
